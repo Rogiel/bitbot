@@ -1,0 +1,26 @@
+{
+  "name": "bitbot",
+  "version": "0.0.1",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "cexio": "0.0.5",
+    "co": "^4.6.0",
+    "datalib": "^1.7.3",
+    "fili": "^2.0.0",
+    "lodash": "^4.17.2",
+    "moment": "^2.16.0",
+    "predict": "0.0.3",
+    "q": "^1.4.1",
+    "shellcraft": "^1.2.3",
+    "sqlite3": "^3.1.8",
+    "uuid": "^2.0.3",
+    "websocket": "^1.0.23"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "sinon": "^1.17.6"
+  },
+  "scripts": {
+    "postinstall": "node -e \"var s='../src',d='node_modules/bitbot',fs=require('fs');fs.exists(d,function(e){e||fs.symlinkSync(s,d,'dir')});\""
+  }
+}
